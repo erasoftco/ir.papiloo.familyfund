@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insert_user"
+    android:padding="20dp"
+    tools:context=".InsertUserActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="50dp">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="نام صندوق را وارد کنید"
+            android:textColorHint="#EAE7ED"
+            android:textColor="#EAE7ED"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txtuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="نام کاربری را وارد کنید"
+            android:textColorHint="#EAE7ED"
+            android:textColor="#EAE7ED"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+
+
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="پسورد را وارد کنید"
+            android:textColorHint="#EAE7ED"
+            android:textColor="#EAE7ED"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+
+
+            />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_marginTop="50dp"
+            android:text="ثبت"
+            android:background="@drawable/insert_user"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:scrollbarSize="7dp"
+            android:visibility="invisible"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#EAE7ED"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
